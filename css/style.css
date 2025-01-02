@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h4 {
+    color: #333;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner{
+    background: #000000;
+    background: linear-gradient(to top, #000000 0%, rgba(255, 255, 255, 0) 80%);
+    width: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .title1{
+        visibility: hidden;
+    }
+    .title2{
+        visibility: visible;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .title2{
+        visibility: hidden;
+    }
+
+}
