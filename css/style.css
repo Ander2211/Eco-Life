@@ -46,3 +46,70 @@ video {
     }
 
 }
+
+
+
+/*galeria*/
+
+.galeria {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-item {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+.product-item:hover {
+    border-color: #000;
+}
+.product-display {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+.product-display.visible {
+    opacity: 1;
+}
+.product-display img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.product-display h2 {
+    margin: 0 0 10px;
+}
+.product-display p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
