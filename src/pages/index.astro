@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContentCard from '../components/ContentCard';
+---
+
+<Layout title="Content Cards Demo">
+  <main>
+    <ContentCard
+      client:load
+      imageUrl="https://picsum.photos/200/200"
+      imageAlt="Sample image"
+      title="Welcome to Our Site"
+      description="This is a sample description that demonstrates our new ContentCard component. You can reuse this component throughout your site with different images, titles, and descriptions."
+    />
+    
+    <ContentCard
+      client:load
+      imageUrl="https://picsum.photos/200/200?random=2"
+      imageAlt="Another sample image"
+      title="Another Example"
+      description="Here's another example of the same component being reused with different content. You can add as many of these as you need throughout your site."
+    />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+</style>
