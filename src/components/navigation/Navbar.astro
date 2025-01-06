@@ -2,9 +2,10 @@
 import NavLink from './NavLink.astro';
 ---
 
+<!--  NavBar con TailwindCSS 
 <nav class="navbar">
   <div class="nav-content">
-    <div class="logo">LearnHub</div>
+    <div class="logo text-yellow-400">LearnHub</div>
     <div class="nav-links">
       <NavLink href="/" label="Inicio" />
       <NavLink href="/blog" label="Blog Educativo" />
@@ -13,6 +14,26 @@ import NavLink from './NavLink.astro';
     </div>
   </div>
 </nav>
+-->
+
+<!--  NavBar con Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <div class="container-fluid">
+        <a class="navbar-brand fs-3 text-succes" href="#">Eco-Life</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+                <NavLink href="/" label="Inicio" />
+                <NavLink href="/blog" label="Blog Educativo" />
+                <NavLink href="/challenges" label="Desafíos y Retos" />
+                <NavLink href="/forum" label="Foro Comunitario" />
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
 <style>
   .navbar {
@@ -37,7 +58,7 @@ import NavLink from './NavLink.astro';
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    
   }
 
   .nav-links {
@@ -45,17 +66,6 @@ import NavLink from './NavLink.astro';
     gap: 2rem;
   }
 
-  @media (max-width: 768px) {
-    .nav-content {
-      flex-direction: column;
-      padding: 1rem;
-      gap: 1rem;
-    }
 
-    .nav-links {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-  }
+.
 </style>

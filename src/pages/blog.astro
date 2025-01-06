@@ -1,8 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import GridLayout from '../components/galeria/GridLayout.tsx';
+
+
 ---
 
 <Layout title="Blog Educativo">
   <h1>Blog Educativo</h1>
   <p>Contenido del blog educativo aquí...</p>
+
+
+
+  <GridLayout client:load />
+
+
+
+
+
+
+
 </Layout>
+
+<style>
+  main {
+    margin: 0.3rem auto;
+    max-width: 1200px;
+  }
