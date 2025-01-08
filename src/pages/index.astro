@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Bienvenida from '../components/Bienvenida';
 import ContentCard from '../components/ContentCard';
 ---
 
 <Layout title="Inicio">
+
+  <h1 class="fs-2 fw-semibold">¡Bienvenido a Eco-Life!</h1>
+
+<Bienvenida client:load/>
+
   <main>
     <ContentCard
       client:load

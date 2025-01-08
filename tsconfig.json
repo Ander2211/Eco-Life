@@ -1,3 +1,17 @@
 {
-  "extends": "astro/tsconfigs/base"
+  // Removed schema reference due to loading issues
+  
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+  
 }

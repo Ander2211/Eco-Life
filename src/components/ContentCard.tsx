@@ -9,8 +9,8 @@ interface ContentCardProps {
 
 export default function ContentCard({ imageUrl, imageAlt, title, description }: ContentCardProps) {
   return (
-    <div className="content-card">
-      <div className="image-container">
+    <div className="content-card  rounded-lg shadow-lg ">
+      <div className="image-container mx-auto">
         <img src={imageUrl} alt={imageAlt} />
       </div>
       <div className="content">
@@ -21,12 +21,14 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
       <style>{`
         .content-card {
           display: flex;
-          gap: 2rem;
-          padding: 2rem;
+          padding: 1.4rem;
           background: white;
           border-radius: 1rem;
-          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+          
+          
         }
+        
+        
 
         .image-container {
           flex-shrink: 0;
@@ -34,7 +36,6 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
           height: 200px;
           border-radius: 0.5rem;
           overflow: hidden;
-          background: #e5ffe5;
         }
 
         .image-container img {
@@ -49,6 +50,25 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
 
         h1 {
           margin: 0 0 1rem 0;
+          font-size: rem;
+          color: #333;
+        }
+
+        p {
+          margin: 0;
+          color: #666;
+          line-height: 1.6;
+        }
+
+
+
+        @media (max-width: 720px) {
+        
+          .content-card {
+            flex-wrap: wrap;
+
+            h1 {
+          margin: 0 0 1rem 0;
           font-size: 2rem;
           color: #333;
         }
@@ -58,6 +78,8 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
           color: #666;
           line-height: 1.6;
         }
+      }
+      
       `}</style>
     </div>
   );
