@@ -9,11 +9,11 @@ interface ContentCardProps {
 
 export default function ContentCard({ imageUrl, imageAlt, title, description }: ContentCardProps) {
   return (
-    <div className="content-card  rounded-lg shadow-lg ">
-      <div className="image-container mx-auto">
+    <div className="rounded-lg shadow-lg content-card ">
+      <div className="mx-auto image-container">
         <img src={imageUrl} alt={imageAlt} />
       </div>
-      <div className="content">
+      <div className="contentCard">
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
@@ -24,12 +24,8 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
           padding: 1.4rem;
           background: white;
           border-radius: 1rem;
-          
-          
         }
-        
-        
-
+          
         .image-container {
           flex-shrink: 0;
           width: 200px;
@@ -44,15 +40,17 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
           object-fit: cover;
         }
 
-        .content {
+        .contentCard {
           flex-grow: 1;
+          margin-left: 1.2rem;
         }
 
         h1 {
+        padding: 0 1rem ;
           margin: 0 0 1rem 0;
-          font-size: rem;
+          font-size: 2rem;
           color: #333;
-        }
+          }
 
         p {
           margin: 0;
@@ -65,13 +63,16 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
         @media (max-width: 720px) {
         
           .content-card {
+          flex-direction: row;
+            display: flex;
             flex-wrap: wrap;
+          }
 
-            h1 {
-          margin: 0 0 1rem 0;
-          font-size: 2rem;
+          h1 {
+          margin: 1rem auto 0 0;
+          font-size: 1.6rem;
           color: #333;
-        }
+          }
 
         p {
           margin: 0;

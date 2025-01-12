@@ -2,11 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import Bienvenida from '../components/Bienvenida';
 import ContentCard from '../components/ContentCard';
+import Video from '../components/video.astro';
 ---
 
 <Layout title="Inicio">
 
-  <h1 class="fs-2 fw-semibold">¡Bienvenido a Eco-Life!</h1>
+<Video/>
 
 <Bienvenida client:load/>
 

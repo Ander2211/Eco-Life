@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Bienvenida() {
     return (
-        <div className="container mt-4  bg-primary">
+        <div className="container mt-4 ">
     <div className="row">
 
-        <aside className="col-md-4 mb-4">
-            <div className="p-3 bg-light border rounded">
+        <aside className="mb-4 col-md-4">
+            <div className="p-3 border rounded bg-light">
                 <h4 className='fs-3 '>Barra Lateral</h4>
                 <p>Contenido adicional o enlaces relacionados.</p>
             </div>
@@ -24,9 +24,10 @@ export default function Bienvenida() {
                     Propósito principal:
 
                     </p>
+                    <br />
 
                 <li>Concienciar sobre los efectos del cambio climático.</li>
-                <li>Promover hábitos sostenibles que beneficien a las personas y al planeta.</li>
+                <li className='py-2'>Promover hábitos sostenibles que beneficien a las personas y al planeta.</li>
                 <li>Proveer recursos, consejos y datos clave para hacer la sostenibilidad accesible para todos.</li>
 
             </div>
