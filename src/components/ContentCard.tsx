@@ -1,13 +1,15 @@
 import React from 'react';
+import tailwindIntegration from '@astrojs/tailwind';
 
 interface ContentCardProps {
   imageUrl: string;
   imageAlt: string;
   title: string;
   description: string;
+  impactDate: string;
 }
 
-export default function ContentCard({ imageUrl, imageAlt, title, description }: ContentCardProps) {
+export default function ContentCard({ imageUrl, imageAlt, title, description,impactDate }: ContentCardProps) {
   return (
     <div className="rounded-lg shadow-lg content-card ">
       <div className="mx-auto image-container">
@@ -15,7 +17,8 @@ export default function ContentCard({ imageUrl, imageAlt, title, description }: 
       </div>
       <div className="contentCard">
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p className="descripcion">{description}</p>
+        <p className="mt-3 dato_imp"><span className='font-medium text-gray-700'>Dato Impactante:</span> {impactDate}</p>
       </div>
 
       <style>{`

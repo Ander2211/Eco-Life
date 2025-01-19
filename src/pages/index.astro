@@ -12,21 +12,24 @@ import Video from '../components/video.astro';
 <Bienvenida client:load/>
 
   <main>
+    <h2 class="font-light fs-1 ">Problemas Actuales</h2>
     <ContentCard
       client:load
       imageUrl="https://picsum.photos/300/300"
       imageAlt="Sample image"
-      title="Welcome to Our Site"
-      description="This is a sample description that demonstrates our new ContentCard component. You can reuse this component throughout your site with different images, titles, and descriptions."
-    />
+      title="Cambio Climático"
+      description=" El aumento de las emisiones de gases de efecto invernadero, como el dióxido de carbono y el metano, está provocando un calentamiento global sin precedentes. Esto causa fenómenos extremos como huracanes, sequías y olas de calor."
+      impactDate=' Desde 1880, la temperatura media de la Tierra ha aumentado aproximadamente 1.1 °C.'
+      />
     
     <ContentCard
       client:load
       imageUrl="https://picsum.photos/200/200?random=2"
       imageAlt="Another sample image"
-      title="Another Example"
-      description="Here's another example of the same component being reused with different content. You can add as many of these as you need throughout your site."
-    />
+      title="Deforestación"
+      description='Cada año se talan millones de hectáreas de bosques para la agricultura, la ganadería y la urbanización. Esto no solo afecta la biodiversidad, sino que también reduce la capacidad del planeta para absorber dióxido de carbono.'
+      impactDate='Perdemos alrededor de 10 millones de hectáreas de bosque anualmente, un área del tamaño de Islandia.'
+      />
   </main>
 </Layout>
 
